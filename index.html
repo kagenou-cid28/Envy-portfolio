@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krish Shree Surya S — ENVY Portfolio" />
+  <title>Krish Shree Surya S · ENVY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Three.js Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Forest background overlay -->
+  <div id="forest-bg"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <p class="loader-label">Initializing Envy Interface</p>
+    <p class="loader-counter" id="loader-counter">000%</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-progress" id="nav-progress"></div>
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">ENVY <span class="nav-brand-glyph">∞</span> KRISH</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#capabilities" class="nav-link">Skills</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/resume.pdf" download class="nav-pill">Available ↗</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="eyebrow">©2026</p>
+        <h1 class="hero-title" id="hero-title">
+          KRISH SHREE SURYA S
+        </h1>
+        <div class="hero-meta">
+          <div class="hero-meta-block">
+            <span class="hero-meta-icon">·</span>
+            <span class="hero-meta-text">AI-focused ECE engineer based in Coimbatore — bridging embedded systems with intelligent computing.</span>
+          </div>
+          <div class="hero-meta-block">
+            <span class="hero-meta-icon">∞</span>
+            <span class="hero-meta-text italic">"Jack of All Trades."</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#work" class="cta cta-primary">View Projects →</a>
+          <a href="#contact" class="cta cta-secondary">Contact Me</a>
+          <a href="assets/resume.pdf" download class="cta cta-secondary">Download Resume ↓</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <div class="hero-portrait">
+            <img src="assets/portrait.jpg" alt="Krish Shree Surya S" />
+          </div>
+        </div>
+        <p class="hero-portrait-label">[ id ] KSS · 2026</p>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <span>==/AI × ECE × ENGINEER==</span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>From silicon to intelligence. Building at the intersection of AI, embedded systems, and full-stack engineering — precision-engineered, fast-shipped, designed to last.</span>
+      <span class="marquee-sep"> ∞ </span>
+      <span>From silicon to intelligence. Building at the intersection of AI, embedded systems, and full-stack engineering — precision-engineered, fast-shipped, designed to last.</span>
+      <span class="marquee-sep"> ∞ </span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <p class="eyebrow">About <span class="eyebrow-slash">/</span> 01</p>
+      <h2 class="section-heading">Hey, I'm Krish, an <em class="accent">AI-focused</em> <em class="accent">ECE engineer</em> based in Coimbatore — bridging silicon with intelligence.</h2>
+      <div class="about-grid">
+        <div>
+          <div class="portrait-frame">
+            <div class="about-portrait">
+              <img src="assets/portrait.jpg" alt="Krish Shree Surya S" />
+            </div>
+          </div>
+          <p class="hero-portrait-label">[ id ] KSS · 2026</p>
+        </div>
+        <div class="about-bio">
+          <p>I'm an Electronics and Communication Engineering student at Sri Ramakrishna Institute of Technology, driven by a deep curiosity for how hardware and intelligence converge. My work spans embedded systems, AI-driven signal processing, and full-stack engineering — always with a focus on building things that feel intentional and solve real problems.</p>
+          <p>Beyond the terminal, I'm drawn to systems thinking, product design, and the art of communicating complex ideas simply. Whether it's a circuit simulation, a thermodynamic analyzer, or an AI travel platform, I treat every project as a chance to learn something new and build something worth showing. I learn fast, adapt quickly, and believe in being a jack of all trades while pursuing mastery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section id="capabilities" class="section reveal">
+    <div class="container">
+      <p class="eyebrow">Capabilities <span class="eyebrow-slash">/</span> 02</p>
+      <h3 class="section-heading">A spectrum of <em class="accent">capabilities</em> — engineered for precision, tuned for adaptability.</h3>
+      <div class="skills-grid" id="skills-grid">
+        <div class="radar-card">
+          <div class="barchart" id="barchart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section reveal">
+    <div class="container">
+      <p class="eyebrow"><span class="accent">∞</span> Selected work · 2024–2025</p>
+      <div class="work-header">
+        <h2 class="work-title">WORK</h2>
+        <a href="#" class="work-all-link">View All Work →</a>
+      </div>
+      <div class="work-list">
+        <div class="metric-card">
+          <span class="skill-idx">[ 01 ]</span>
+          <div class="work-tags"><span>AI</span><span>Engineering Analysis</span></div>
+          <h3 class="work-card-name">Thermoforge Pro</h3>
+          <p class="work-card-desc">A precision thermodynamic analyzer built for thermal system optimization in industrial environments.</p>
+          <div class="work-card-foot"><span>2025</span><a href="#">Case study ↗</a></div>
+        </div>
+        <div class="metric-card">
+          <span class="skill-idx">[ 02 ]</span>
+          <div class="work-tags"><span>Research</span><span>Signal ML</span></div>
+          <h3 class="work-card-name">AI–ECE Integration Study</h3>
+          <p class="work-card-desc">Exploring the intersection of artificial intelligence and electronic circuit design for adaptive signal processing.</p>
+          <div class="work-card-foot"><span>2025</span><a href="#">Case study ↗</a></div>
+        </div>
+        <div class="metric-card">
+          <span class="skill-idx">[ 03 ]</span>
+          <div class="work-tags"><span>Tinkercad</span><span>Analog</span></div>
+          <h3 class="work-card-name">Circuit Lab Simulations</h3>
+          <p class="work-card-desc">A collection of analog and digital circuit simulations with real-time parameter tuning and waveform analysis.</p>
+          <div class="work-card-foot"><span>2025</span><a href="#">Case study ↗</a></div>
+        </div>
+        <div class="metric-card">
+          <span class="skill-idx">[ 04 ]</span>
+          <div class="work-tags"><span>AI</span><span>Full-Stack Platform</span></div>
+          <h3 class="work-card-name">Travel Loop</h3>
+          <p class="work-card-desc">An intelligent travel planning platform that generates optimized itineraries using route-aware AI routing.</p>
+          <div class="work-card-foot"><span>2026</span><a href="#">Live demo ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trajectory -->
+  <section id="trajectory" class="section reveal">
+    <div class="container">
+      <p class="eyebrow">Trajectory <span class="eyebrow-slash">/</span> 03</p>
+      <h3 class="section-heading">A continuous <em class="accent">arc</em> of learning — from first principles to applied intelligence.</h3>
+      <div class="timeline-cards">
+        <div class="timeline-card"><span class="timeline-card-year">2025</span><span class="skill-idx">[01]</span><h4>Began ECE Journey</h4><p class="timeline-card-inst">Sri Ramakrishna Institute of Technology</p><p class="timeline-card-desc">Circuits, signals, programming — laying the foundation.</p></div>
+        <div class="timeline-card"><span class="timeline-card-year">2025</span><span class="skill-idx">[02]</span><h4>AI × ECE Integration</h4><p class="timeline-card-inst">Research Initiative</p><p class="timeline-card-desc">Machine learning applications in signal processing and circuit design.</p></div>
+        <div class="timeline-card"><span class="timeline-card-year">2025</span><span class="skill-idx">[03]</span><h4>Thermoforge Pro</h4><p class="timeline-card-inst">Personal Project</p><p class="timeline-card-desc">AI-assisted thermodynamic analysis tool combining hardware and software.</p></div>
+        <div class="timeline-card"><span class="timeline-card-year">2026</span><span class="skill-idx">[04]</span><h4>Travel Loop</h4><p class="timeline-card-inst">Full-Stack AI Platform</p><p class="timeline-card-desc">Travel planning platform with AI-driven itinerary recommendations.</p></div>
+        <div class="timeline-card"><span class="timeline-card-year">2026</span><span class="skill-idx">[05]</span><h4>Building the Future</h4><p class="timeline-card-inst">Open</p><p class="timeline-card-desc">Hackathons, startups, AI research labs — open to collaborate.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h2 class="contact-heading">Let's build something <em class="accent">intelligent.</em></h2>
+      <p class="contact-sub">Open to <em class="accent">hackathons</em>, <em class="accent">startups</em>, and <em class="accent">AI research</em> opportunities.</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:krishshreesurya@gmail.com" class="contact-row"><span class="contact-label">Email</span><span class="contact-value">krishshreesurya@gmail.com ↗</span></a>
+          <a href="https://github.com/kagenou-cid28" target="_blank" rel="noopener" class="contact-row"><span class="contact-label">GitHub</span><span class="contact-value">github.com/kagenou-cid28 ↗</span></a>
+          <a href="https://www.linkedin.com/in/krish-shree-surya-s-91932b394" target="_blank" rel="noopener" class="contact-row"><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/krish-shree-surya-s ↗</span></a>
+          <a href="tel:+916380223232" class="contact-row"><span class="contact-label">Phone</span><span class="contact-value">+91 63802 23232 ↗</span></a>
+          <a href="#" class="cta cta-primary contact-cta">Start a conversation →</a>
+          <p class="contact-note">Response within 24h</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" rows="4" required></textarea>
+          <button type="submit" class="cta cta-primary contact-submit">Send →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-brand">ENVY <span class="footer-glyph">∞</span></p>
+        <div class="footer-meta">
+          <span>Krish Shree Surya S · Portfolio · MMXXVI</span>
+          <span class="footer-mono">Location: Coimbatore, IN</span>
+          <span class="footer-mono accent">Status: Available for opportunities</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-mono">© 2026 · Engineered with intent · v1.0 · Eclipse Edition</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
